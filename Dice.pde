@@ -1,7 +1,7 @@
 int sumtotal=0;
 int value = 1;
 void setup(){
-size(1000,1000);
+size(1000,800);
 noLoop();
 }
 void draw(){
@@ -20,7 +20,6 @@ for (int y = 165; y < 800*(value/3+1); y += 100-value) {
   fill(0);
   text("Total dots: "+total,450,100);
   text("Absolute total since last refresh: "+sumtotal,425,125);
-  text("PRESS ANY KEY TO SWITCH TO 272 DICE",400,150);
 }
 void mousePressed(){
 redraw();
@@ -85,4 +84,8 @@ class Die {
     ellipse(myX+75,myY+75,20,20); 
     } 
 }
+  
 }
+
+
+
