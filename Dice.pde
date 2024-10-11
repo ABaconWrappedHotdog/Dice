@@ -8,8 +8,8 @@ void draw(){
   background(128,128,128);
   int total = 0;
   
-for (int y = 165; y < 800*(value/3+1); y += 100-value) {
-    for (int x = 0; x < 800*(value/3+1); x += 100-value) {
+for (int y = 165; y < 800*(value); y += 100-value) {
+    for (int x = 50-value*3; x < 800*(value); x += 100-value) {
       Die bob = new Die(x, y);
       bob.roll();
        bob.show();
@@ -20,6 +20,7 @@ for (int y = 165; y < 800*(value/3+1); y += 100-value) {
   fill(0);
   text("Total dots: "+total,450,100);
   text("Absolute total since last refresh: "+sumtotal,425,125);
+  text("Your computer would explode with any more dice",0,50);
 }
 void mousePressed(){
 redraw();
