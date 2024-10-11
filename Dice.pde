@@ -9,7 +9,7 @@ void draw(){
   int total = 0;
   
 for (int y = 165; y < 800*(value/3+1); y += 100-value) {
-    for (int x = 100-value*3; x < 800*(value/3+1); x += 100-value) {
+    for (int x = 50-value*3; x < 800*(value/3+1); x += 100-value) {
       Die bob = new Die(x, y);
       bob.roll();
        bob.show();
