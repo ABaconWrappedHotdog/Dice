@@ -5,7 +5,7 @@ size(1000,800);
 noLoop();
 }
 void draw(){
-  background(128,128,128);
+  background(138,138,138);
   int total = 0;
   
 for (int y = 165; y < 800*(value); y += 100-value) {
